@@ -14,7 +14,7 @@
 
   private
   def post_params
-    params.require(:item).permit(:title, :description, :image) # has_one_attached :image の場合
+    params.require(:post).permit(:title, :description, :image) # has_one_attached :image の場合
   end
 ```
 ## vidion.rb
