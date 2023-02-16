@@ -7,7 +7,7 @@ def create
 	redirect_to hoge_path  
   else
 	path = Rails.application.routes.recognize_path(request.referer)
-	render "#{paths[:controller]}/#{path[:action]}"
+	render "#{path[:controller]}/#{path[:action]}"
   end
 end
 ```
