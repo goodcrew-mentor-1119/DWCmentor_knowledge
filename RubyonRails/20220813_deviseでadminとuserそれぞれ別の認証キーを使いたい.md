@@ -9,7 +9,7 @@ class User < ApplicationRecord
 
 ## admin.rb
 ```ruby
-class Team < ApplicationRecord
+class Admin < ApplicationRecord
   devise :database_authenticatable, authentication_keys: [:email]
   ...
 ```
